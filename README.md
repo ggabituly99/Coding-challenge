@@ -1,9 +1,13 @@
 # Coding-challenge
 
 # Instructions
+  
   *Install Python3
+  
   *Install Pandas Library
+  
   *Install Json Library
+  
   *Install OS Library
   
 # DMV Appointment Scheduler
@@ -46,10 +50,13 @@ Our goal is to process all customers AND have our tellers go home as early as po
 
 # Solution method
   1. Assign all the customers to tellers by types of the service and specialty(Type 1->Type 1, Type 2->Type 2, Type 3->Type 3, Type 4->Type 0)
+    
     1.1 This gives us minimum The total duration of all appointments for all tellers but the time the last customer would be proccessed will be long
   2. Find mean time for all tellers to proceed customers
+    
     2.1 This gives us the approximate time the last customer should pe proccessed
   3. Apply Algorithm to distribute customers between tellers from sorted list of tellers by total time spent on customers until the the teller's total-time spent close
+    
     3.1 The teller who has the least total-time spent for customers gets customers from the teller who has the most total-time spent for customers until the difference in total-time spent for customers is <30( 1<->n, 2<->n-1, ...)
     3.2 Sort and repeat algorithm until the difference between teller who has the least total-time spent for customers gets customers from the teller who has the most total-time spent for customers until the difference in total-time spent for customers is <30
    
